@@ -1,16 +1,9 @@
 let licznik = 0;
-
-const licznikElement = document.getElementById("licznik");
-const plusBtn = document.getElementById("plus");
-const minusBtn = document.getElementById("minus");
-const resetBtn = document.getElementById("reset");
-
-plusBtn.addEventListener("click", () => {
-  licznik++;
-  licznikElement.textContent = licznik;
-});
-
-minusBtn.addEventListener("click", () => {
-  licznik--;
-  licznikElement.textContent = licznik;
-});
+function Dodac() {
+  licznik = licznik + 1;
+  document.getElementById("licznik").innerHTML = licznik;
+}
+function Odjac() {
+  licznik = licznik - 1;
+  document.getElementById("licznik").innerHTML = licznik;
+}
